@@ -11,3 +11,5 @@ link_libraries(FreeGLUT::freeglut GLEW::GLEW)
 add_executable(chapter.1.1 01/chapter.1.1.cpp)
 add_executable(chapter.1.2 01/chapter.1.2.cpp)
 add_executable(chapter.1.3 01/chapter.1.3.cpp)
+
+add_executable(chapter.2.1 02/chapter.2.1.cpp)
