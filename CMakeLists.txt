@@ -9,3 +9,4 @@ find_package(glew CONFIG REQUIRED)
 link_libraries(FreeGLUT::freeglut GLEW::GLEW)
 
 add_executable(chapter.1.1 01/chapter.1.1.cpp)
+add_executable(chapter.1.2 01/chapter.1.2.cpp)
