@@ -116,7 +116,7 @@ void render() {
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
 
     glutSwapBuffers();
     glutPostRedisplay();
@@ -143,15 +143,23 @@ void cleanup() {
 
 void createVBO() {
     GLfloat vertices[] = {
+        -0.8f,  0.8f, 0.0f, 1.0f,
+         0.8f,  0.8f, 0.0f, 1.0f,
         -0.8f, -0.8f, 0.0f, 1.0f,
-         0.0f,  0.8f, 0.0f, 1.0f,
+
+        -0.8f, -0.8f, 0.0f, 1.0f,
+         0.8f,  0.8f, 0.0f, 1.0f,
          0.8f, -0.8f, 0.0f, 1.0f
     };
 
     GLfloat colors[] = {
         1.0f, 0.0f, 0.0f, 1.0f,
         0.0f, 1.0f, 0.0f, 1.0f,
-        0.0f, 0.0f, 1.0f, 1.0f
+        0.0f, 0.0f, 1.0f, 1.0f,
+
+        0.0f, 0.0f, 1.0f, 1.0f,
+        0.0f, 1.0f, 0.0f, 1.0f,
+        1.0f, 1.0f, 1.0f, 1.0f
     };
 
     glGenVertexArrays(1, &vaoId);
